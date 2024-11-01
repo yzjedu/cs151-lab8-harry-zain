@@ -17,3 +17,22 @@
 # 3.add the two numbers 
 # 4.keep repeating that for num_rolls ammount of times. 
 # incrase the corresponding spot in sum_counter by 1 depending what the dice add up to
+
+# Purpose: Display all the roll sums
+# Name: display_results
+# Parameters: sum_counter(list of numbers)
+# Return: None
+# Algorithm
+# 1. Loop through the sum_counter list using index with 0 to 10
+# 2. for every index, put "Sum of (the sum number)"
+
+# Purpose: Main function to use everything 
+# Name: Main
+# Parameters: None
+# Return: None
+# Algorithm
+# 1. call get_num_rolls to get the users ammount of rolls they want.
+# 2. Call roll_dice using the number of rolls to get the sum counter.
+# 3. call display_results with the sum counter to display all the sums of the dice
+# 4. print ending messege "thank you for using this application"
+
