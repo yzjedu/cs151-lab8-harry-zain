@@ -19,7 +19,7 @@ for _ in range(num_rolls):
     roll_counts[roll_sum - 2] += 1 
     
 # Display the results as a chart 
-print("\nRoll Distribution:") 
+print("\nNumbers rolled:") 
 
  # Sums from 2 to 12
 for i in range(2, 13): 
