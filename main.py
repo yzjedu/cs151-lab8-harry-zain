@@ -3,18 +3,16 @@ import random
 
 # Ask the user for the number of rolls
 def roll_dice_simulation():
-    while True:
-        try:
-            num_rolls = int(input("Enter the number of times to roll the dice: "))
-            if num_rolls > 0:
-                break
-            else:
-                print("Please enter a number greater than 0.")
-        except ValueError:
-            print("Invalid input. Please enter a valid number.")
 
-    # Initialize a list to count occurrences of each possible sum (from 2 to 12)
-    roll_counts = [0] * 11
+    num_rolls = input("Enter the number of times to roll the dice: ") 
+    while not num_rolls.isdigit():
+        num_rolls = input("Enter the number of times to roll the dice: ")
+    num_rolls = int(num_rolls)
+    while num_rolls < 0:
+        num_rolls = input("Enter the number of times to roll the dice: ")
+    # Initialize a list to count occurrences of each possible sum (from 2 to 12) 
+    roll_counts = [0] * 11 
+
 
     # Simulate rolling the dice
     for _ in range(num_rolls):
@@ -24,7 +22,7 @@ def roll_dice_simulation():
         # Adjust to a zero-based index for the list
         roll_counts[roll_sum - 2] += 1
 
-        # Display the results as a chart
+    # Display the results as a chart
     print("\nNumbers rolled:")
     # Sums from 2 to 12
     for i in range(2, 13):
