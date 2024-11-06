@@ -1,8 +1,8 @@
 ENCRYPTED:
 # reflection document
 
-* Ymdqz Apgg Ivhz  : 
-* Kvmoizm Apgg Ivhz: 
-* Nopyzio DY: 
+* Driver full name  : Harry Li
+* Partner full name : Zain
+* Student Id: 1930859
 
 
