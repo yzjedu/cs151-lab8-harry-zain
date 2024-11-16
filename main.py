@@ -1,16 +1,13 @@
 import random
 
 def int_check(value):
-    while not value.isdigit():
-        num_rolls = input("Enter the number of times to roll the dice: ")
-    value = int(num_rolls)
-    while value < 0:
-        num_rolls = input("Enter the number of times to roll the dice: ")
-    return value
+    while not value.isdigit() or int(value) <= 0:
+        value = input("Please enter a positive number: ")
+    return int(value)
     
 # Ask the user for the number of rolls
 def roll_dice_simulation():
-
+    print('In this program, you would enter a number above 0 and it would randomly roll 2 dies based on your input.')
     num_rolls = input("Enter the number of times to roll the dice: ") 
     num_rolls = int_check(num_rolls)
     # Initialize a list to count occurrences of each possible sum (from 2 to 12) 
